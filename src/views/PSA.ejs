@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Service Announcement</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header_logo">Public Service Announcement</div>
+        <div class="header_search">Search</div>
+    </header>
+
+    <div class="wrapper">
+        <div class="PSA">
+            <h1>Public Service Announcement</h1>
+
+
+            <%articles.forEach(function(article, index) { %>
+            <a href="#" class="PSA_card">
+                <h2><% article.title.rendered %></h2>
+                <p>CDC recommends a yearly flu vaccine as the first and most important step in protecting against flu viruses. Getting a
+                flu vaccine during 2020-2021 will be more important than ever.</p>
+            </a>
+
+            <% }) %>
+        </div>
+    </div>
+
+</body>
+
+</html>
